@@ -28,5 +28,5 @@ install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 curl -fsSL https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
 usermod -aG docker jenkins
+systemctl restart jenkins
 systemctl enable jenkins
-systemctl start jenkins
