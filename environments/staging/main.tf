@@ -66,3 +66,12 @@ resource "aws_eks_access_policy_association" "jenkins" {
     type = "cluster"
   }
 }
+
+resource "aws_vpc_security_group_ingress_rule" "jenkins_to_eks_api" {
+  security_group_id            = module.eks.cluster_security_group_id
+  referenced_security_group_id = module.jenkins.security_group_id
+  from_port                    = 443
+  to_port                      = 443
+  ip_protocol                  = "tcp"
+  description                  = "Jenkins to EKS API"
+}

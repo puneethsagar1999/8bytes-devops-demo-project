@@ -9,3 +9,7 @@ output "instance_id" {
 output "role_arn" {
   value = aws_iam_role.jenkins.arn
 }
+
+output "security_group_id" {
+  value = aws_security_group.jenkins.id
+}
