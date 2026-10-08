@@ -33,3 +33,6 @@ variable "grafana_admin_password" {
   sensitive = "true"
 }
 
+variable "allowed_ip" {
+  type = string
+}

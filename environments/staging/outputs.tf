@@ -17,3 +17,11 @@ output "rds_endpoint" {
 output "rds_secret_arn" {
   value = module.rds.secret_arn
 }
+
+output "jenkins_public_ip" {
+  value = module.jenkins.public_ip
+}
+
+output "jenkins_instance_id" {
+  value = module.jenkins.instance_id
+}

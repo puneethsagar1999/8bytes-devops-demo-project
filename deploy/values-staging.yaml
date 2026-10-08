@@ -1,3 +1,1 @@
-image:
-  repository: 484799953929.dkr.ecr.us-east-1.amazonaws.com/devops-staging-staging-app
-  tag: v2
+replicaCount: 1
